@@ -1,0 +1,8 @@
+remove and rm can be used to remove objects. These can be specified successively as character strings, or in the character vector list, or through a combination of both. All objects thus specified will be removed.
+
+eg:
+rm(tmp)
+
+rm(list=ls()) #drop all variables 清除全部对象，即用ls()列出全部对象名，用一个list将全部对象装
+
+rm(list = c('temp1','temp2')) or rm(temp1, temp2) 
