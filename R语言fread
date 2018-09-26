@@ -1,0 +1,7 @@
+一直都是用read.csv，突然遇到fread。
+
+读取大文件data.table的fread()比默认的read.csv()快。
+但是用fread()之后要用summary去检查一下数据，看看数据是不是跟原来的一样。
+
+转自：
+https://zhuanlan.zhihu.com/p/29161823
