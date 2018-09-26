@@ -1,0 +1,13 @@
+table uses the cross-classifying factors to build a contingency table of the counts at each combination of factor levels.
+
+> table(churn$churn)
+
+False.  True. 
+  2850    483 
+  
+> table(churn$cs_calls)
+
+   0    1    2    3    4    5    6    7    8    9 
+ 697 1181  759  429  166   66   22    9    2    2 
+ 
+ table 在R就是计算对应列的level
