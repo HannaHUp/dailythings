@@ -1,0 +1,27 @@
+This weird looking sign is a forward-pipe operator.
+
+You can use it to pass the left-hand side input through the right-hand side operator. In mathematical terms, it is the following operation:
+
+x%>%f which translates to f(x)
+
+Here is a simple example, where I create a vector of values, take the root square of every number and then compute the sum:
+
+c(1,2,3,4) %>% Map(sqrt, .) %>%  Reduce(sum, .)
+# The output: [1] 6.146264
+
+
+It is very useful when you need to apply many different transformations to your data and don’t want to save the intermediate results or have many opening and closing function parentheses.
+
+Consider writing the following:
+
+x %>% impute %>% shuffle %>% pivot
+versus the alternative:
+
+pivot(shuffle(impute(x)))
+
+
+You can use it in your R session by loading the margrittr[1] package:
+
+library(magrittr)
+
+from:  https://www.quora.com/What-does-sign-mean-in-R
