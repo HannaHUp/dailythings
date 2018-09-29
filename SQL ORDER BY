@@ -1,0 +1,7 @@
+ORDER BY 排列时，不写明ASC DESC的时候，默认是ASC。
+
+order by A,B        这个时候都是默认按升序排列
+order by A desc,B   这个时候 A 降序，B 升序排列
+order by A ,B desc  这个时候 A 升序，B 降序排列
+
+FROM:  http://www.runoob.com/sql/sql-orderby.html
